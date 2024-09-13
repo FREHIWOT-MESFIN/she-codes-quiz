@@ -1,0 +1,42 @@
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* So it doesn't block interactions */
+  }
+
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--confetti-color);
+    opacity: 0.9;
+    transform-origin: center;
+    animation: fall 5s forwards, rotate 5s infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(100vw, -100vh) scale(1.5);
+      }
+      100% {
+        transform: translate(0, 100vh) scale(0.5);
+        opacity: 0;
+      }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

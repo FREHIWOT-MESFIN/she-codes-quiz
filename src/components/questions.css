@@ -1,0 +1,80 @@
+.quiz-container{
+    position: relative;
+    background-color: white;
+    color: rgb(13, 13, 104);
+    padding: 1.4rem;
+    margin: auto;
+    min-height: 20rem;
+    width: 35rem;
+    border-radius: .5rem;
+}
+.qCard{
+    min-height: 15rem;
+    margin-bottom: 1rem;
+}
+.qCard p,
+.qCard li:last-child{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.qCard li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .2rem;
+    list-style: none;
+    padding: .2rem;
+}
+.qCard li i{
+    font-size: 1.4rem;
+}
+.qCard li:hover{
+    border-radius: 1.4rem;
+    background-color: rgba(121, 113, 113, 0.11);
+}
+.qCard button{
+    position: absolute;
+    bottom: 1rem;
+    right: 1.4rem;
+    border: none;
+    background: rgb(13, 13, 104);
+    color: white;
+    padding: .6rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.qCard li i{
+    cursor: pointer;
+}
+.qCard li i.ri-checkbox-circle-line{
+    color: rgb(25, 192, 61);
+}
+
+.qCard li i.ri-close-circle-line{
+    color: red;
+}
+
+.progress-bar{
+    background-color: rgba(121, 113, 113, 0.11);
+    min-width: 100%;
+    height: .4rem;
+    border-radius: 1rem;
+    margin-block: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+.qCard li i.disabled {
+    pointer-events: none; 
+    color: gray; 
+    cursor: not-allowed; 
+  }
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
