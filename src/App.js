@@ -7,13 +7,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' Component={Home}/>
-          <Route path='/quiz' Component={Quiz}/>
-          <Route path='/result' Component={Result}/>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/quiz' element={<Quiz />} />
+            <Route path='/result' element={<Result />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
