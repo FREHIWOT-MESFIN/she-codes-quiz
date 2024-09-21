@@ -44,7 +44,7 @@
     border-radius: .3rem;
     cursor: pointer;
 }
-.qCard li i{
+.qCard li{
     cursor: pointer;
 }
 .qCard li i.ri-checkbox-circle-line{
@@ -69,12 +69,27 @@
 }
 
   
-.qCard li i.disabled {
+.qCard li.disabled {
     pointer-events: none; 
     color: gray; 
     cursor: not-allowed; 
   }
 button:disabled {
-    background-color: gray;
+    background-color: rgb(103, 102, 102);
     cursor: not-allowed;
+  }
+
+.qCard li.answeredWrong,
+.qCard li.answeredCorrect{
+    border-radius: .8rem;
+    pointer-events: none; 
+    color: rgb(103, 102, 102); 
+    cursor: not-allowed; 
+  }
+.qCard li.answeredWrong{
+    background-color: rgba(242, 104, 104, 0.874);
+  }
+
+.qCard li.answeredCorrect{
+    background-color: rgba(62, 208, 62, 0.737);
   }

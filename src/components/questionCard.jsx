@@ -9,13 +9,14 @@ function Qcard(props) {
       <p>{`${index}. ${question}`}</p>
       <ul>
         {answers.map((ans, idx) => (
-          <li key={idx}>
+          <li key={idx} className={`${answered ? (ans === correctAnswer ? 'answeredCorrect' : ans === selectedAnswer ? 'answeredWrong' : 'disabled') : ''}
+            ${answered && ans === selectedAnswer ? 'selected' : ''}
+          `}  onClick={() => handleAnswer(ans)}>
             <i
               className={`ri-checkbox-blank-circle-line 
                 ${answered ? (ans === correctAnswer ? 'ri-checkbox-circle-line' : ans === selectedAnswer ? 'ri-close-circle-line' : 'disabled') : ''}
                 ${answered && ans === selectedAnswer ? 'selected' : ''}
               `}
-              onClick={() => handleAnswer(ans)}
             ></i>
             {ans}
           </li>
