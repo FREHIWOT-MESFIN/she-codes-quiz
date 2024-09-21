@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/she-codes-quiz/static/css/main.32f0752d.css",
+    "main.js": "/she-codes-quiz/static/js/main.449996bc.js",
+    "static/js/453.2e310a63.chunk.js": "/she-codes-quiz/static/js/453.2e310a63.chunk.js",
+    "index.html": "/she-codes-quiz/index.html",
+    "main.32f0752d.css.map": "/she-codes-quiz/static/css/main.32f0752d.css.map",
+    "main.449996bc.js.map": "/she-codes-quiz/static/js/main.449996bc.js.map",
+    "453.2e310a63.chunk.js.map": "/she-codes-quiz/static/js/453.2e310a63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32f0752d.css",
+    "static/js/main.449996bc.js"
+  ]
+}
