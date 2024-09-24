@@ -106,7 +106,7 @@ function Quiz() {
             {currentQuestion ? (
                 <Qcard 
                     index={currentIndex + 1} 
-                    question={currentQuestion.question.replace(/"/g, "'")} 
+                    question={currentQuestion.question.replace(/&quot;/gi, '"').replace(/&#039;/gi, "'")} 
                     correctAnswer={currentQuestion.correct_answer}
                     answers={currentQuestion.answers}
                     handleAnswer={handleAnswer} 

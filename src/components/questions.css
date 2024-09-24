@@ -9,6 +9,10 @@
     border-radius: .5rem;
 }
 .qCard{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
     min-height: 15rem;
     margin-bottom: 1rem;
 }
@@ -17,7 +21,9 @@
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
-
+.qCard ul{
+    width: 100%;
+}
 .qCard li{
     display: flex;
     align-items: center;
@@ -34,13 +40,11 @@
     background-color: rgba(121, 113, 113, 0.11);
 }
 .qCard button{
-    position: absolute;
-    bottom: 1rem;
-    right: 1.4rem;
+    align-self: self-end;
     border: none;
     background: rgb(13, 13, 104);
     color: white;
-    padding: .6rem;
+    padding: 1rem;
     border-radius: .3rem;
     cursor: pointer;
 }

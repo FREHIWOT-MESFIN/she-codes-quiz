@@ -5,9 +5,11 @@ function Home() {
   return (
     <div className='home-container'>
       <h1>Welcome</h1>
-      <button>
-        <Link style={{color: 'white', textDecoration: 'none', fontSize: '1.2rem'} } to="/quiz">Start</Link>
-      </button>
+      <Link style={{color: 'white', textDecoration: 'none', fontSize: '1.2rem', cursor: 'pointer'} } to="/quiz">
+        <button >
+        Start
+        </button>
+      </Link>
     </div>
   )
 }
